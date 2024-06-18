@@ -1,0 +1,21 @@
+<app-transaction-form [editTransaction]="editTransaction" (formSubmitted)="handleFormSubmit()">
+</app-transaction-form>
+
+<div class="container">
+    <h2>Transactions</h2>
+    <span *ngIf="transactions.length === 0">No Transactions found.</span>
+    <ul class="transaction-list">
+        <li *ngFor="let transaction of transactions" class="transaction-item">
+            <div class="capitalize-text">
+                <span>{{ transaction.description }}</span>
+                <span>{{ transaction.amount | currency: 'INR' }}</span>
+                <span>{{ transaction.date | date}}</span>
+                <span>{{ transaction.type }}</span>
+            </div>
+            <div>
+                <button (click)="setEditTransaction(transaction)" class="edit-btn">Edit</button>
+                <button (click)="deleteTransaction(transaction.id)" class="delete-btn">Delete</button>
+            </div>
+        </li>
+    </ul>
+</div>

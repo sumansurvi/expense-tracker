@@ -1,0 +1,56 @@
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 600px !important;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Main container styles */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Paragraph styles */
+.container p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/* Enhanced total section */
+.total-section {
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+}

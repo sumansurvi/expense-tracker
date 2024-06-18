@@ -1,0 +1,73 @@
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Transaction list styles */
+.transaction-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+
+}
+
+/* Transaction item styles */
+.transaction-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.transaction-item span {
+    margin-right: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.delete-btn:hover {
+    background-color: #c51440;
+}
+
+.delete-btn {
+    background-color: #ec1515;
+}
+
+.capitalize-text {
+    text-transform: capitalize !important;
+}
